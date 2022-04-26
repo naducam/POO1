@@ -12,11 +12,12 @@ public class Reserva {
     private Date fecha_entrega;
     private Date fecha_solicitud;
     private Operador operador;
+    private Vehiculo vehiculo;
     private ArrayList<Opcionales> opcionales = new ArrayList<Opcionales>();
 
     public Reserva() {}
 
-    public Reserva(String numero, String sede_recogida, String sede_entrega, Date fecha_inicio, Date fecha_entrega, Date fecha_solicitud, Operador operador, ArrayList<Opcionales> opcionales) {
+    public Reserva(String numero, String sede_recogida, String sede_entrega, Date fecha_inicio, Date fecha_entrega, Date fecha_solicitud, Operador operador, ArrayList<Opcionales> opcionales, Vehiculo vehiculo) {
         this.numero = numero;
         this.sede_recogida = sede_recogida;
         this.sede_entrega = sede_entrega;
@@ -24,6 +25,7 @@ public class Reserva {
         this.fecha_entrega = fecha_entrega;
         this.fecha_solicitud = fecha_solicitud;
         this.operador = operador;
+        this.vehiculo = vehiculo;
         this.opcionales = opcionales;
     }
 
@@ -89,5 +91,13 @@ public class Reserva {
 
     public void setOpcionales(ArrayList<Opcionales> opcionales) {
         this.opcionales = opcionales;
+    }
+
+    public Vehiculo getVehiculo() {
+        return vehiculo;
+    }
+
+    public void setVehiculo(Vehiculo vehiculo) {
+        this.vehiculo = vehiculo;
     }
 }

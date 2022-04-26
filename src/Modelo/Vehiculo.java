@@ -12,8 +12,8 @@ public class Vehiculo {
     private int capacidad;
     private float kilometraje; //en kilometros
     private int puertas;
-    private int vin;
-    private int mpg;
+    private int vin; // numero de vin
+    private int mpg; // rendimiento de millas por galon
     private float costo_diario;
     private int capacidad_maletas;
     private TTransmision transmision;
@@ -159,4 +159,11 @@ public class Vehiculo {
     public void setHistorial_mantenimeinto(ArrayList<Mantenimiento> historial_mantenimeinto) {
         this.historial_mantenimeinto = historial_mantenimeinto;
     }
+
+    public void add_mantenimiento(Mantenimiento mantenimiento)
+    {
+        historial_mantenimeinto.add(mantenimiento);
+    }
+
+
 }

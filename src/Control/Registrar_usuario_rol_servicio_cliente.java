@@ -47,10 +47,10 @@ public class Registrar_usuario_rol_servicio_cliente {
         this.Contraseña = Contraseña;
     }
     
-    public String generar_Contrase�a(){
-    String Contrase�a = "";
-    Contrase�a = UUID.randomUUID().toString().toUpperCase().substring(0,8);
-    return "Su Contrase�a es : " + Contrase�a;     
+    public String generar_Contraseña(){
+    String Contraseña = "";
+    Contraseña = UUID.randomUUID().toString().toUpperCase().substring(0,8);
+    return "Su Contraseña es : " + Contraseña;     
     }
     public void  Enviar_a_Correo(){
         /*Insertar*/

@@ -8,16 +8,17 @@ public class Licencia {
     private String tipo;
     private Date fecha_emision;
     private Date fecha_expiracion;
-    //imagen
+    private String imagen_nombre; // ex: "nombre_de_archivo.png"
 
     public Licencia(){}
 
-    public Licencia(int num, String tip, Date emision, Date expiracion)
+    public Licencia(int num, String tip, Date emision, Date expiracion, String imagen_nombre)
     {
         this.numero = num;
         this.tipo = tip;
         this.fecha_emision = emision;
         this.fecha_expiracion = expiracion;
+        this.imagen_nombre = imagen_nombre;
     }
 
     public void setNumero(int numero) {
@@ -50,5 +51,13 @@ public class Licencia {
 
     public Date getFecha_expiracion() {
         return fecha_expiracion;
+    }
+
+    public String getImagen_nombre() {
+        return imagen_nombre;
+    }
+
+    public void setImagen_nombre(String imagen_nombre) {
+        this.imagen_nombre = imagen_nombre;
     }
 }
